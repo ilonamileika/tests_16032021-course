@@ -1,0 +1,16 @@
+title: Tests_16032021
+description: zoom sanāksmei
+template:
+  repo: tests_16032021-template
+  name: tests_16032021
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
